@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/media-queries.css">
+
+  <title>Calc</title>
+</head>
+<body>
+  <div class="calc">
+    <div class="calc-header">
+        <div class="calc-screen" id="screen">
+          <div id="last-op-screen"> </div>
+          <div id="current-op-screen"> </div>
+        </div>
+    </div>
+
+    <div class="calc-keypad">
+      <section class="calc-keys" id="keys">      
+        <button class="calc-key calc-key-num" data-type-btn="number" value="7"> 7 </button>
+        <button class="calc-key calc-key-num" data-type-btn="number" value="8"> 8 </button>
+        <button class="calc-key calc-key-num" data-type-btn="number" value="9"> 9 </button>
+        <button  class="calc-key calc-key-action" data-type-btn="action" value="delete"> D </button>
+  
+        <button class="calc-key calc-key-num" data-type-btn="number" value="4"> 4 </button>
+        <button class="calc-key calc-key-num" data-type-btn="number" value="5"> 5 </button>
+        <button class="calc-key calc-key-num" data-type-btn="number" value="6"> 6 </button>
+        <button  class="calc-key calc-key-op" data-type-btn="operator" value="+"> + </button>
+  
+        <button class="calc-key calc-key-num" data-type-btn="number" value="1"> 1 </button>
+        <button class="calc-key calc-key-num" data-type-btn="number" value="2"> 2 </button>
+        <button class="calc-key calc-key-num" data-type-btn="number" value="3"> 3 </button>
+        <button  class="calc-key calc-key-op" data-type-btn="operator" value="-"> - </button>
+  
+        <button class="calc-key calc-key-num" data-type-btn="decimal" value="."> . </button>
+        <button class="calc-key calc-key-num" data-type-btn="number" value="0"> 0 </button>
+        <button class="calc-key calc-key-op" data-type-btn="operator" value="/"> / </button>
+        <button class="calc-key calc-key-op" data-type-btn="operator" value="*"> * </button>
+  
+        <button class="calc-key calc-key-reset calc-key-action" data-type-btn="action" value="reset">Reset</button>
+        <button class="calc-key calc-key-action" data-type-btn="action" value="invert"> + / -</button>
+        <button class="calc-key calc-key-equal calc-key-action" data-type-btn="action" value="="> =</button>
+      </section>
+    </div>
+  </div>
+  <button class="btn-modal" id="open-modal">
+    <span class="material-symbols-outlined">
+      info
+    </span>
+  </button>
+
+  <div id="modal-container" class="modal-container modal-container-hidden">
+    <article class="modal">
+      <h1 class="title">Calculator App</h1>
+
+      <section class="section">
+        <h2 class="subtitle">keyboard controls</h2>
+        <ul class="ul">
+          <li class="li"><span class="key">R</span> reset operation</li>
+          <li class="li"><span class="key">I</span> for to convert the number into negative and vice versa</li>
+          <li class="li"><span class="key">Backspace</span> for to delete</li>
+          <li class="li"><span class="key">+</span> adittion</li>
+          <li class="li"><span class="key">-</span> subtraction</li>
+          <li class="li"><span class="key">*</span> multiplication</li>
+          <li class="li"><span class="key">/</span> division</li>
+          <li class="li"><span class="key">.</span> decimal notation</li>
+        </ul>
+      </section>
+
+
+      <button class="btn-close-modal" id="close-modal">
+        <span class="material-symbols-outlined">
+          cancel
+          </span>
+      </button>
+    </article>
+  </div>
+
+  <script src="index.js" type="module"></script>
+</body>
+</html>

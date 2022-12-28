@@ -1,0 +1,85 @@
+@media (hover:hover) {
+  .calc-key:hover {
+    cursor: pointer;
+    background-color: var(--calc-key-bg-hover);
+  } 
+  .btn-modal:hover,
+  .btn-close-modal:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .calc-keys {
+    grid-template-columns: repeat(4, 65px);
+    grid-template-rows: repeat(5, 45px);
+  }
+}
+@media screen and (min-width: 500px) {
+  .calc-keys {
+    grid-template-columns: repeat(4, 95px);
+    grid-template-rows: repeat(5, 55px);
+  }
+  .btn-close-modal {
+    top: 5%;
+    left: 90%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .calc-keys {
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: repeat(5, 70px);
+  }
+  .btn-close-modal {
+    left: 90%;
+    top: 5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn-modal{
+    position: absolute;
+    left: 85%;
+    top: 83%;
+  }
+  .modal {
+    width: 60%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .calc{
+    width: 60%;
+  }
+  .calc-keys {
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: repeat(5, 70px);
+  }
+  #current-screen-op,
+  #last-screen-op,
+  .calc-key {
+    font-size: 2rem;
+  }
+  .btn-close-modal {
+    top: 5%;
+    left: 92%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .calc{
+    width: 50%;
+  }
+  .calc-keys {
+    grid-template-columns: repeat(4, 130px);
+    grid-template-rows: repeat(5, 70px);
+    gap: .7rem;
+  }
+  #current-screen-op,
+  #last-screen-op,
+  .calc-key {
+    font-size: 2rem;
+  }
+  .btn-close-modal {
+    top: 5%;
+    left: 95%;
+  }
+}
